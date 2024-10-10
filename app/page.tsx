@@ -1,101 +1,81 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+    <div>
+      <h1 className="text-5xl px-3 py-4 flex justify-start w-4/5">Welcome to Your Recipe Haven!</h1>
+  <div className="flex justify-between  items-center px-4">
+<p className="  font-bold font-mono w-96 px-5">Discover a world of delicious recipes that inspire your culinary adventures. Whether you’re a seasoned chef or a home cook, our curated collection has something for everyone. From quick weeknight dinners to indulgent desserts, we provide step-by-step guides and tips to make cooking enjoyable and accessible.
+Explore our easy-to-follow recipes, join a community of food lovers, and elevate your cooking skills. Let’s embark on this flavorful journey together!</p>
+<div className="mx-106 flex justify-end w-1/2">
+  <img src="https://i.imgur.com/HOyMK5p.png" alt="food" className="ml-4 h-80 w-96"/>
+</div>
+</div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}
+<Link href="/recipes">
+<button className="bg-red-500 py-4 px-2 text-2xl justify-center rounded-lg mb-10 mt-4 hover:bg-red-700 mx-8">Explore now</button></Link>
+</div>
+
+
+<div className="px-12 py-8">
+<h2 className="text-3xl font-bold  mb-4">DESERT && SWEET</h2>
+
+<p className="text-2xl font-semibold mb-5">For those with a sweet tooth</p>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+<Link href="/recipes/mangodelight">
+  <div className="hover:scale-105 transition-transform">
+    <img src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/bakrid/image/mango-delight.jpg" alt="Breakfast" className="w-full h-80 object-cover cursor-pointer" />
+    <h3 className="text-3xl mt-2 cursor-pointer">MANGO DELIGHT</h3>
+  </div>
+  </Link>
+
+<Link href="/recipes/pancake">
+  <div className="hover:scale-105 transition-transform">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuZnWQ3bF1Lvn-EOB7ty4iFjuRW08tWfltg&s" alt="Lunch" className="w-full h-80 object-cover cursor-pointer" />
+    <h3 className="text-3xl mt-2">PAN CAKES</h3>
+  </div>
+  </Link>
+
+<Link href="/recipes/cheesecake">
+  <div className="hover:scale-105 transition-transform">
+    <img src="https://img.taste.com.au/pLPG_hJV/taste/2021/05/lemon-dream-dessert-more-must-see-videos-171595-2.jpg" alt="Dessert" className="w-full h-80 object-cover cursor-pointer" />
+    <h3 className="text-3xl mt-2">CHEESE CAKE</h3>
+  </div>
+  </Link>
+</div>
+</div>
+
+
+<div className="px-12 py-8">
+  <h2 className="text-3xl font-bold  mb-3">FAMILY FAVORITES</h2>
+  <p className="text-2xl font-semibold mb-6">Crowd-pleasing recipes for gatherings</p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+<Link href="/recipes/biryani">
+  <div>
+  <img src="https://hamariweb.com/recipes/images/recipeimages/3464.jpg" alt="dish" className="w-FULL h-80 object-cover hover:scale-105 transition-transform cursor-pointer"/>
+  <h3 className="text-3xl mt-4">BIRYANI</h3>
+</div>
+</Link>
+
+<Link href="/recipes/redsausepasta">
+<div>
+  <img src="https://c.ndtvimg.com/2020-01/0ta23aq8_pasta_625x300_24_January_20.jpg" alt="dish" className="w-FULL h-80 object-cover hover:scale-105 transition-transform cursor-pointer"/>
+  <h3 className="text-3xl mt-4">RED SAUSE PASTA</h3>
+</div>
+</Link>
+
+<Link href="/recipes/malaiqofty">
+<div>
+  <img src="https://www.cookforindia.com/wp-content/uploads/2017/04/1469258122-malai-kofta.jpg" alt="dish" className="w-FULL h-80 object-cover hover:scale-105 transition-transform cursor-pointer"/>
+  <h3 className="text-3xl mt-4">MALAI QOFTY</h3>
+</div>
+</Link>
+
+</div>
+</div>
+</div>
+)}
