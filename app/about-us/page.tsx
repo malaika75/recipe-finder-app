@@ -22,7 +22,7 @@ export default function about(){
 
       <h2 className="font-semibold text-2xl ml-2 font-serif text-yellow-500">Get In Touch</h2>
       <p className="mb-8 mx-6 mt-4 font-mono">
-        We'd love to hear from you! Reach out to us via our <a href="/contact" className="text-blue-500 underline">Contact</a> page for any inquiries.
+      We&apos;d love to hear from you! Reach out to us via our <a href="/contact" className="text-blue-500 underline">Contact</a> page for any inquiries.
       </p>
     </div>
     </div>
