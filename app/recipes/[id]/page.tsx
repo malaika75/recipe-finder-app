@@ -1,8 +1,7 @@
 "use client"
 
-import { useParams, useRouter } from "next/navigation";
+import { useParams} from "next/navigation";
 import { useEffect , useState} from "react";
-import recipe from "./page";
 
 const RecipeDetails = () => {
     const params = useParams()

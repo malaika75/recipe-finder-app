@@ -1,5 +1,3 @@
-import { Input } from "postcss";
-
 export default function contact(){
     return(
         <div>
