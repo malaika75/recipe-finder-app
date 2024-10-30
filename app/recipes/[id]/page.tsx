@@ -79,8 +79,8 @@ const RecipeDetails = () => {
     }
 
     return(
-        <div className="bg-yellow-300 p-4">
-            <h1 className="text-5xl font-serif font-bold mb-4 border-b-8 border-red-600 inline-block">{recipe.name}</h1>
+        <div className="bg-amber-200 p-4">
+            <h1 className="text-5xl font-serif font-bold mb-4 border-b-8 border-red-600 inline-block mt-10">{recipe.name}</h1>
             <h2 className="text-3xl font-bold mt-10">INGREDIENTS:</h2>
             <p className="text-2xl mb-10">{recipe.ingredients}</p>
             <h2 className="text-3xl font-bold">Method:</h2>

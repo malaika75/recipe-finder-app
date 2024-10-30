@@ -2,7 +2,7 @@ import React from "react";
 
 function footer(){
     return(
-        <div className="bg-yellow-300 min-w-full  border-spacing-3 border-grey border-2">
+        <div className=" bg-yellow-200 sm:bg-yellow-300 min-w-full sm:h-80 h-96 border-t-2 border-gray-500">
             <ul className="text-red-950 text-bold text-3xl px-20 my-12 text-center">
                 <li className="my-2 hover:underline cursor-pointer">privacy policy</li>
                 <li className="my-2 hover:underline cursor-pointer">terms & conditions</li>

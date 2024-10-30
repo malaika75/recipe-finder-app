@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <div>
     <div>
-      <h1 className="text-5xl px-3 py-4 flex justify-start w-4/5">Welcome to Your Recipe Haven!</h1>
+      <h1 className="text-5xl px-3 py-4 flex justify-start w-5/5 mt-8 ml-4">Welcome to Your Recipe Haven!</h1>
   <div className="flex justify-between  items-center px-4">
-<p className="  font-bold font-mono w-96 px-5">Discover a world of delicious recipes that inspire your culinary adventures. Whether you’re a seasoned chef or a home cook, our curated collection has something for everyone. From quick weeknight dinners to indulgent desserts, we provide step-by-step guides and tips to make cooking enjoyable and accessible.
+<p className="  font-bold font-mono w-96 px-5 mt-6">Discover a world of delicious recipes that inspire your culinary adventures. Whether you’re a seasoned chef or a home cook, our curated collection has something for everyone. From quick weeknight dinners to indulgent desserts, we provide step-by-step guides and tips to make cooking enjoyable and accessible.
 Explore our easy-to-follow recipes, join a community of food lovers, and elevate your cooking skills. Let’s embark on this flavorful journey together!</p>
 <div className="mx-106 flex justify-end w-1/2">
   <Image src="https://i.imgur.com/HOyMK5p.png" alt="food" className="ml-4 h-80 w-96" width={200} height={200}/>
