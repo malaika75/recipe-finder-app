@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function recipe(){
     return(
         <div className="bg-white">
-            <h1 className="font-bold text-4xl justify-center font-serif mx-4 mb-11 py-6">Recipe Catelog</h1>
+            <h1 className="font-bold text-4xl justify-center font-serif mx-4 mb-11 py-6 mt-12">Recipe Catelog</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-8 md:grid-cols-4 gap-8 mx-4 lg:grid-cols-4">
 
                 <Link href="/recipes/biryani">
